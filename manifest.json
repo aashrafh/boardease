@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Blackboard Bullshit",
+    "description": "An extension to download recorded videos from Blackboard Ultra",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab",
+     "downloads",
+     "https://*.bbcollab.com/*/*"
+     ]
+  }
