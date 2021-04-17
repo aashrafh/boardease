@@ -14,3 +14,37 @@ body {
   text-align: center;
   text-indent: 15px;
 }
+
+.download:hover {
+  background-color: #333;
+  color: white;
+}
+
+.download:before,
+.download:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+}
+
+.download:before {
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+}
+
+.download:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  margin-top: 3px;
+  margin-left: -7px;
+  animation: arrow 2s linear infinite;
+  animation-play-state: paused;
+}
