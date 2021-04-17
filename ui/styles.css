@@ -1,0 +1,16 @@
+body {
+  background-color: #1a1a1a;
+}
+
+.download {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  background-color: #4cc713;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
+}
