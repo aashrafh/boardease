@@ -1,11 +1,16 @@
 {
     "manifest_version": 2,
     "name": "Blackboard Bullshit",
+    "author": "Ahmed Ashraf",
     "description": "An extension to download recorded videos from Blackboard Ultra",
     "version": "1.0",
     "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
+        "default_title": "Blackboard Bullshit",
+        "default_icon": {
+            "38": "icons/38.png",
+            "19": "icons/19.png"
+        },
+        "default_popup": "ui/popup.html"
     },
     "permissions": [
         "tabs",
@@ -20,13 +25,13 @@
                 "*://*.bbcollab.com/*"
             ],
             "js": [
-                "content.js"
+                "scripts/content.js"
             ]
         }
     ],
     "background": {
         "scripts": [
-            "background.js"
+            "scripts/background.js"
         ],
         "persistent": false
     }
