@@ -19,6 +19,13 @@ body {
   background-color: #333;
   color: white;
 }
+.download:hover:before,
+.download:hover:after {
+  border-color: #4cc713;
+}
+.download:hover:after {
+  animation-play-state: running;
+}
 
 .download:before,
 .download:after {
@@ -47,4 +54,25 @@ body {
   margin-left: -7px;
   animation: arrow 2s linear infinite;
   animation-play-state: paused;
+}
+
+@keyframes arrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
 }
